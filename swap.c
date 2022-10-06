@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* swap - swaps the value of the top two elements to the stack
+* op_swap - swaps the value of the top two elements to the stack
 *
 * @stack: pointer that point to stack
 * @line_number: line number of instruction

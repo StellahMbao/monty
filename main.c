@@ -20,7 +20,7 @@ int find_opcode(stack_t **stack, char *opcode, int line_number)
 		{NULL, NULL}
 	};
 	int i;
-	
+
 	for (i = 0; opcodes[i].opcode; i++)
 	{
 		if (strcmp(opcode, opcodes[i].opcode) == 0)
@@ -50,14 +50,13 @@ int main(__attribute__((unused)) int argc, char const *argv[])
 	size_t lol = 0;
 	int line_number = 0;
 	stack_t *stack = NULL, *current;
-	
+
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
 		return (EXIT_FAILURE);
 	}
 	mf = fopen(argv[1], "r");
-	
 	if (mf == NULL)
 	{
 		fprintf(stderr, "Error: can't open file %s\n", argv[1]);

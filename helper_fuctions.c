@@ -10,7 +10,7 @@
 void free_stack(stack_t *stack)
 {
 	stack_t *next;
-	
+
 	while (stack != NULL)
 	{
 		next = stack->next;
@@ -28,15 +28,15 @@ void free_stack(stack_t *stack)
 **/
 unsigned int len(stack_t **stack)
 {
-        stack_t *current;
-        unsigned int l = 0;
+	stack_t *current;
+	unsigned int l = 0;
 
-        current = *stack;
-        while (current)
-        {
-                current = current->next;
-                l++;
-        }
-        return (l);
+	current = *stack;
+	while (current)
+	{
+		current = current->next;
+		l++;
+	}
+	return (l);
 }
 
